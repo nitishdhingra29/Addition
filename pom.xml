@@ -14,4 +14,27 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <!-- Add your project dependencies here -->
+    <dependencies>
+        <!-- Example dependency: JUnit for testing -->
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Optional: Maven Dependency Plugin for generating the dependency tree -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>tree</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
